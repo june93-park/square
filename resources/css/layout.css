@@ -76,6 +76,22 @@ a {
 }
 
 /* 
+    relaxed grid
+*/
+
+.ui.relaxed.grid {    
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+}
+
+.ui.grid>.relaxed.row>.column,
+.ui.relaxed.grid>.column:not(.row),
+.ui.relaxed.grid>.row>.column {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/* 
     layout css 
 */
 
@@ -151,7 +167,7 @@ html,body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .section-title h3 {
@@ -162,6 +178,14 @@ html,body {
 .section-title p {
     color: #777777;
     margin-top: 0.25rem;
+}
+
+.section-desc p {
+    margin-bottom: 2rem;
+}
+
+.section-desc p:last-child {
+    margin-bottom: 10rem;
 }
 
 /* 
