@@ -66,6 +66,7 @@ a {
 
 .column.flex {
     display: flex!important;
+    flex-direction: column;
     align-items: center;
     /* justify-content: center; */
 }
@@ -83,6 +84,11 @@ html,body {
 }
 
 #wrapper {
+}
+
+#header,
+#container,
+#footer {
     width: 1440px;
     margin: 0 auto;
     max-width: 100%;
@@ -137,6 +143,25 @@ html,body {
     font-size: 0.9375rem;
     line-height: 1;
     margin-bottom: -2px;
+}
+
+.section-title {
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.section-title h3 {
+    font-size: 1.75rem;
+    color: #007863;
+}
+
+.section-title p {
+    color: #777777;
+    margin-top: 0.25rem;
 }
 
 /* 
